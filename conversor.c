@@ -40,9 +40,10 @@ int escolheTipo() {
     return tipo;
 }
 
-void converteArea (int t1, int t2) {
 
-}
+/* Funções de conversão */
+
+/* ADICIONAR TODOS OS TIPOS DE CONVERSÃO NECESSÁRIOS KKKKKKKKKKKKKAAA */
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
@@ -58,7 +59,7 @@ int main() {
         tipo1 = escolheTipo();
         printf("PARA\n");
         tipo2 = escolheTipo();
-        converteArea(tipo1, tipo2);
+        
     }
     if (opcao == 3) imprimeDescricao();
     if (opcao == 4) return 0;
