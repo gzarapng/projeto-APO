@@ -29,7 +29,7 @@ void imprimeDescricao() {
 int escolheTipo() {
     int tipo;
     printf("1) Quilômetro quadrado (km²)\n");
-    printf("2)Hectare (ha)\n");
+    printf("2) Hectare (ha)\n");
     printf("3) Metro quadrado(m²)\n");
     printf("4) Centímetro quadrado (cm²)\n");
     printf("5) Milímetro quadrado (mm²)\n");
@@ -54,11 +54,11 @@ int main() {
     //Chama as funções de acordo com a opção escolhida
     if (opcao == 1) imprimeSobre(); 
     if (opcao == 2) {
-        printf("CONVERTER\n");
+        printf("CONVERTER DE\n");
         tipo1 = escolheTipo();
+        printf("PARA\n");
         tipo2 = escolheTipo();
         converteArea(tipo1, tipo2);
-        
     }
     if (opcao == 3) imprimeDescricao();
     if (opcao == 4) return 0;
