@@ -43,12 +43,13 @@ int escolheTipo() {
 
 /* Funções de conversão */
 
-/* ADICIONAR TODOS OS TIPOS DE CONVERSÃO NECESSÁRIOS KKKKKKKKKKKKKAAA */
+/* ADICIONAR TODOS OS TIPOS DE CONVERSÃO NECESSÁRIOS */
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
     int opcao;    
     char tipo1, tipo2;
+    char res = 's';
 
     opcao = menu(); //Atribui à variavel o valor retornado da função
 
@@ -60,6 +61,121 @@ int main() {
         printf("PARA\n");
         tipo2 = escolheTipo();
         
+        while(res == 's') {
+            if (tipo1 == 1) {
+                if (tipo2 == 1) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo2 == 2) {
+                if (tipo2 == 1) {
+
+                } else if (tipo2 == 2) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo1 == 3) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo1 == 4) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo1 == 5) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo1 == 6) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+                    printf("Já convertido!");
+                } else if (tipo2 == 7) {
+
+                }
+            } else if (tipo1 == 7) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+                    printf("Já convertido!");
+                }
+            }
+        }
     }
     if (opcao == 3) imprimeDescricao();
     if (opcao == 4) return 0;
