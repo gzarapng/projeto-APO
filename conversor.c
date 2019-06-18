@@ -4,11 +4,11 @@
 
 int menu() {
     int opc;
-    printf("Escolha uma opção\n");
+    printf("Escolha uma opção:\n\n");
     printf("1) Sobre o programa - instruções e outras informações\n");
     printf("2) Realizar conversão\n");
     printf("3) Descrição - conceitos, histórico, definição e processo de conversão\n");
-    printf("4) Sair\n");
+    printf("4) Sair\n\n");
     printf("Digite a opção escolhida: ");
     scanf("%d", &opc);
     while (opc < 0 || opc > 4) { //Loop enquanto uma opção inválida for digitada 
@@ -20,7 +20,12 @@ int menu() {
 }
 
 void imprimeSobre() {
-
+    printf("Realizado por:\n");
+    printf("Eloisa Morais - 1960881\n");
+    printf("Gabriel Zara - XXXXXXX\n");
+    printf("Turma A\n");
+    printf("Disciplina: Algoritmos e Programação\n");
+    printf("Instituto Federal de Ciência e Tecnologia (IFSP) - Campus Guarulhos\n\n");
 }
 
 void imprimeDescricao() {
@@ -36,7 +41,7 @@ int escolheTipo() {
     printf("5) Milímetro quadrado (mm²)\n");
     printf("6) Micrometro quadrado\n");
     printf("7) Nanômetro quadrado\n");
-    printf("Escolha: ");
+    printf("Opção: ");
     scanf("%d", &tipo);
 
     return tipo;
@@ -310,134 +315,137 @@ float nanoQuadToMicroQuad() { //Nanometro² para micrometro quadrado
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    int opcao, opcao2;    
+    int opcao;
     char tipo1, tipo2;
 
     opcao = menu(); //Invoca a função e atribui à variavel o valor retornado da função
 
-    //Chama as funções de acordo com a opção escolhida
-    if (opcao == 1) imprimeSobre(); 
-    if (opcao == 2) {
-        printf("CONVERTER DE\n");
-        tipo1 = escolheTipo();
-        printf("PARA\n");
-        tipo2 = escolheTipo();
-        
-        if (tipo1 == 1) {
-            if (tipo2 == 1) {
-                printf("Já convertido!\n\n");
+    while (opcao != 4) {
+        //Chama as funções de acordo com a opção escolhida
+        if (opcao == 1) imprimeSobre(); 
+        if (opcao == 2) {
+            printf("CONVERTER DE\n");
+            tipo1 = escolheTipo();
+            printf("PARA\n");
+            tipo2 = escolheTipo();
+            
+            if (tipo1 == 1) {
+                if (tipo2 == 1) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 2) {
+
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+
+                } else if (tipo2 == 5) {
+
+                } else if (tipo2 == 6) {
+
+                } else if (tipo2 == 7) {
+
+                }
             } else if (tipo2 == 2) {
+                if (tipo2 == 1) {
 
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
+                } else if (tipo2 == 2) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
 
-            } else if (tipo2 == 5) {
+                } else if (tipo2 == 5) {
 
-            } else if (tipo2 == 6) {
+                } else if (tipo2 == 6) {
 
-            } else if (tipo2 == 7) {
+                } else if (tipo2 == 7) {
 
-            }
-        } else if (tipo2 == 2) {
-            if (tipo2 == 1) {
+                }
+            } else if (tipo1 == 3) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
 
-            } else if (tipo2 == 2) {
-                printf("Já convertido!\n\n");
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
+                } else if (tipo2 == 3) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 4) {
 
-            } else if (tipo2 == 5) {
+                } else if (tipo2 == 5) {
 
-            } else if (tipo2 == 6) {
+                } else if (tipo2 == 6) {
 
-            } else if (tipo2 == 7) {
+                } else if (tipo2 == 7) {
 
-            }
-        } else if (tipo1 == 3) {
-            if (tipo2 == 1) {
-                
-            } else if (tipo2 == 2) {
+                }
+            } else if (tipo1 == 4) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
 
-            } else if (tipo2 == 3) {
-                printf("Já convertido!\n\n");
-            } else if (tipo2 == 4) {
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 5) {
 
-            } else if (tipo2 == 5) {
+                } else if (tipo2 == 6) {
 
-            } else if (tipo2 == 6) {
+                } else if (tipo2 == 7) {
 
-            } else if (tipo2 == 7) {
+                }
+            } else if (tipo1 == 5) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
 
-            }
-        } else if (tipo1 == 4) {
-            if (tipo2 == 1) {
-                
-            } else if (tipo2 == 2) {
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
 
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
-                printf("Já convertido!\n\n");
-            } else if (tipo2 == 5) {
+                } else if (tipo2 == 5) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 6) {
 
-            } else if (tipo2 == 6) {
+                } else if (tipo2 == 7) {
 
-            } else if (tipo2 == 7) {
+                }
+            } else if (tipo1 == 6) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
 
-            }
-        } else if (tipo1 == 5) {
-            if (tipo2 == 1) {
-                
-            } else if (tipo2 == 2) {
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
 
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
+                } else if (tipo2 == 5) {
 
-            } else if (tipo2 == 5) {
-                printf("Já convertido!\n\n");
-            } else if (tipo2 == 6) {
+                } else if (tipo2 == 6) {
+                    printf("Já convertido!\n\n");
+                } else if (tipo2 == 7) {
 
-            } else if (tipo2 == 7) {
+                }
+            } else if (tipo1 == 7) {
+                if (tipo2 == 1) {
+                    
+                } else if (tipo2 == 2) {
 
-            }
-        } else if (tipo1 == 6) {
-            if (tipo2 == 1) {
-                
-            } else if (tipo2 == 2) {
+                } else if (tipo2 == 3) {
+                    
+                } else if (tipo2 == 4) {
 
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
+                } else if (tipo2 == 5) {
 
-            } else if (tipo2 == 5) {
+                } else if (tipo2 == 6) {
 
-            } else if (tipo2 == 6) {
-                printf("Já convertido!\n\n");
-            } else if (tipo2 == 7) {
-
-            }
-        } else if (tipo1 == 7) {
-            if (tipo2 == 1) {
-                
-            } else if (tipo2 == 2) {
-
-            } else if (tipo2 == 3) {
-                
-            } else if (tipo2 == 4) {
-
-            } else if (tipo2 == 5) {
-
-            } else if (tipo2 == 6) {
-
-            } else if (tipo2 == 7) {
-                printf("Já convertido!\n\n");
+                } else if (tipo2 == 7) {
+                    printf("Já convertido!\n\n");
+                }
             }
         }
+        if (opcao == 3) imprimeDescricao();
+        opcao = menu();
     }
-    if (opcao == 3) imprimeDescricao();
     if (opcao == 4) return 0;
  
     return 0;
