@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <string.h>
 
 int menu() {
     int opc;
@@ -35,6 +36,7 @@ int escolheTipo() {
     printf("5) Milímetro quadrado (mm²)\n");
     printf("6) Micrometro quadrado\n");
     printf("7) Nanômetro quadrado\n");
+    printf("Escolha: ");
     scanf("%d", &tipo);
 
     return tipo;
@@ -44,14 +46,274 @@ int escolheTipo() {
 /* Funções de conversão */
 
 /* ADICIONAR TODOS OS TIPOS DE CONVERSÃO NECESSÁRIOS */
+/* Funções de conversão de km² */
+float kmQuadToHec() { //Km² para hectares
+    int resultado;
+
+    return resultado;
+}
+
+float kmQuadToMetroQuad() { //Km² para m²
+    int resultado;
+
+    return resultado;
+}
+
+float kmQuadToCmQuad() { //Km²para Cm²
+    int resultado;
+
+    return resultado;
+}
+
+float kmQuadToMmQuad() { //Km² para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float kmQuadToMicroQuad() { //Km² para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+float kmQuadToNanoQuad() { //Km² para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+
+/*Funções de conversão de hectare */
+float hecToKmQuad() { //Hectare para km²
+    int resultado;
+
+    return resultado;
+}
+
+float hecToMetroQuad() { //Hectare para m²
+    int resultado;
+
+    return resultado;
+}
+
+float hecToCmQuad() { //hectare para cm²
+    int resultado;
+
+    return resultado;
+}
+
+float hecToMmQuad() { //hectare para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float hecToMicroQuad() { //hectare para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+float hecToNanoQuad() { //hectare para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+/*Funções de conversão de m² */
+
+float mQuadToKmQuad() { //M² para km²
+    int resultado;
+
+    return resultado;
+}
+
+float mQuadToHec() { //M² para hectare
+    int resultado;
+
+    return resultado;
+}
+
+float mQuadToCmQuad() { //M² para cm²
+    int resultado;
+
+    return resultado;
+}
+
+float mQuadToMmQuad() { //M² para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float mQuadToMicroQuad() { //M² para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+float mQuadToNanoQuad() { //M² para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+/*Funções de conversão de cm² */
+float cmQuadToKmQuad() { //Cm² para km²
+    int resultado;
+
+    return resultado;
+}
+
+float cmQuadToHec() { //Cm² para hectare
+    int resultado;
+
+    return resultado;
+}
+
+float cmQuadToMQuad() { //Cm² para m²
+    int resultado;
+
+    return resultado;
+}
+
+float cmQuadToMmQuad() { //Cm² para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float cmQuadToMicroQuad() { //Cm² para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+float cmQuadToNanoQuad() { //Cm² para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+/*Funções de conversão de milímetro quadrado */
+float mmQuadToKmQuad() { //Mm² para km²
+    int resultado;
+
+    return resultado;
+}
+
+float mmQuadToHec() { //Mm² para hec
+    int resultado;
+
+    return resultado;
+}
+
+float mmQuadToMetroQuad() { //Mm² para m²
+    int resultado;
+
+    return resultado;
+}
+
+float mmQuadToCmQuad() { //Mm² para cm²
+    int resultado;
+
+    return resultado;
+}
+
+float mmQuadToMicroQua() { //Mm² para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+float mmQuadToNanoQuad() { //Mm² para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+/*Funções de conversão de micrometro quadrado */
+float microQuadToKmQuad() { //Micrometro² para km²
+    int resultado;
+
+    return resultado;
+}
+
+float microQuadToHec() { //Micrometro² para hectare
+    int resultado;
+
+    return resultado;
+}
+
+float microQuadToMetroQuad() { //Micrometro² para m²
+    int resultado;
+
+    return resultado;
+}
+
+float microQuadToCmQuad() { //Micrometro² para cm²
+    int resultado;
+
+    return resultado;
+}
+
+float microQuadToMmQuad() { //Micrometro² para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float microQuadToNanoQuad() { //Micrometro² para nanometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
+/*Funções de conversão de nanometro quadrado */
+float nanoQuadToKmQuad() { //Nanometro² para km²
+    int resultado;
+
+    return resultado;
+}
+
+float nanoQuadToHec() { //Nanometro² para hectare
+    int resultado;
+
+    return resultado;
+}
+
+float nanoQuadToMetroQuad() { //Nanometro² para m²
+    int resultado;
+
+    return resultado;
+}
+
+float nanoQuadToCmQuad() { //Nanometro² para cm²
+    int resultado;
+
+    return resultado;
+}
+
+float nanoQuadToMmQuad() { //Nanometro² para mm²
+    int resultado;
+
+    return resultado;
+}
+
+float nanoQuadToMicroQuad() { //Nanometro² para micrometro quadrado
+    int resultado;
+
+    return resultado;
+}
+
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    int opcao;    
+    int opcao, opcao2;    
     char tipo1, tipo2;
-    char res = 's';
 
-    opcao = menu(); //Atribui à variavel o valor retornado da função
+    opcao = menu(); //Invoca a função e atribui à variavel o valor retornado da função
 
     //Chama as funções de acordo com a opção escolhida
     if (opcao == 1) imprimeSobre(); 
@@ -61,119 +323,117 @@ int main() {
         printf("PARA\n");
         tipo2 = escolheTipo();
         
-        while(res == 's') {
-            if (tipo1 == 1) {
-                if (tipo2 == 1) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 2) {
-
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
-
-                } else if (tipo2 == 5) {
-
-                } else if (tipo2 == 6) {
-
-                } else if (tipo2 == 7) {
-
-                }
+        if (tipo1 == 1) {
+            if (tipo2 == 1) {
+                printf("Já convertido!\n\n");
             } else if (tipo2 == 2) {
-                if (tipo2 == 1) {
 
-                } else if (tipo2 == 2) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
 
-                } else if (tipo2 == 5) {
+            } else if (tipo2 == 5) {
 
-                } else if (tipo2 == 6) {
+            } else if (tipo2 == 6) {
 
-                } else if (tipo2 == 7) {
+            } else if (tipo2 == 7) {
 
-                }
-            } else if (tipo1 == 3) {
-                if (tipo2 == 1) {
-                    
-                } else if (tipo2 == 2) {
+            }
+        } else if (tipo2 == 2) {
+            if (tipo2 == 1) {
 
-                } else if (tipo2 == 3) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 4) {
+            } else if (tipo2 == 2) {
+                printf("Já convertido!\n\n");
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
 
-                } else if (tipo2 == 5) {
+            } else if (tipo2 == 5) {
 
-                } else if (tipo2 == 6) {
+            } else if (tipo2 == 6) {
 
-                } else if (tipo2 == 7) {
+            } else if (tipo2 == 7) {
 
-                }
-            } else if (tipo1 == 4) {
-                if (tipo2 == 1) {
-                    
-                } else if (tipo2 == 2) {
+            }
+        } else if (tipo1 == 3) {
+            if (tipo2 == 1) {
+                
+            } else if (tipo2 == 2) {
 
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 5) {
+            } else if (tipo2 == 3) {
+                printf("Já convertido!\n\n");
+            } else if (tipo2 == 4) {
 
-                } else if (tipo2 == 6) {
+            } else if (tipo2 == 5) {
 
-                } else if (tipo2 == 7) {
+            } else if (tipo2 == 6) {
 
-                }
-            } else if (tipo1 == 5) {
-                if (tipo2 == 1) {
-                    
-                } else if (tipo2 == 2) {
+            } else if (tipo2 == 7) {
 
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
+            }
+        } else if (tipo1 == 4) {
+            if (tipo2 == 1) {
+                
+            } else if (tipo2 == 2) {
 
-                } else if (tipo2 == 5) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 6) {
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
+                printf("Já convertido!\n\n");
+            } else if (tipo2 == 5) {
 
-                } else if (tipo2 == 7) {
+            } else if (tipo2 == 6) {
 
-                }
-            } else if (tipo1 == 6) {
-                if (tipo2 == 1) {
-                    
-                } else if (tipo2 == 2) {
+            } else if (tipo2 == 7) {
 
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
+            }
+        } else if (tipo1 == 5) {
+            if (tipo2 == 1) {
+                
+            } else if (tipo2 == 2) {
 
-                } else if (tipo2 == 5) {
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
 
-                } else if (tipo2 == 6) {
-                    printf("Já convertido!");
-                } else if (tipo2 == 7) {
+            } else if (tipo2 == 5) {
+                printf("Já convertido!\n\n");
+            } else if (tipo2 == 6) {
 
-                }
-            } else if (tipo1 == 7) {
-                if (tipo2 == 1) {
-                    
-                } else if (tipo2 == 2) {
+            } else if (tipo2 == 7) {
 
-                } else if (tipo2 == 3) {
-                    
-                } else if (tipo2 == 4) {
+            }
+        } else if (tipo1 == 6) {
+            if (tipo2 == 1) {
+                
+            } else if (tipo2 == 2) {
 
-                } else if (tipo2 == 5) {
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
 
-                } else if (tipo2 == 6) {
+            } else if (tipo2 == 5) {
 
-                } else if (tipo2 == 7) {
-                    printf("Já convertido!");
-                }
+            } else if (tipo2 == 6) {
+                printf("Já convertido!\n\n");
+            } else if (tipo2 == 7) {
+
+            }
+        } else if (tipo1 == 7) {
+            if (tipo2 == 1) {
+                
+            } else if (tipo2 == 2) {
+
+            } else if (tipo2 == 3) {
+                
+            } else if (tipo2 == 4) {
+
+            } else if (tipo2 == 5) {
+
+            } else if (tipo2 == 6) {
+
+            } else if (tipo2 == 7) {
+                printf("Já convertido!\n\n");
             }
         }
     }
