@@ -446,7 +446,6 @@ int main() {
         if (opcao == 3) imprimeDescricao();
         opcao = menu();
     }
-    if (opcao == 4) return 0;
  
     return 0;
 }
