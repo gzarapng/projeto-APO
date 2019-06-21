@@ -77,37 +77,39 @@ int escolheTipo() {
 /* Funções de conversão de km² */
 float kmQuadToHec() { //Km² para hectares
     int resultado;
-
+    resultado = entrada*100;
     return resultado;
 }
 
 float kmQuadToMetroQuad() { //Km² para m²
     int resultado;
-
+    resultado = entrada*1000000;
     return resultado;
 }
 
 float kmQuadToCmQuad() { //Km²para Cm²
     int resultado;
-
+    resultado = entrada*10000000000;
     return resultado;
 }
 
 float kmQuadToMmQuad() { //Km² para mm²
     int resultado;
-
+    resultado = entrada*1000000000000;
     return resultado;
 }
 
 float kmQuadToMicroQuad() { //Km² para micrometro quadrado
     int resultado;
-
+    //resultado = entrada*1000000000000000000;
+    resultado = entrada*pow(10,18);
     return resultado;
 }
 
 float kmQuadToNanoQuad() { //Km² para nanometro quadrado
     int resultado;
-
+    //resultado = entrada*1000000000000000000000000;
+    resultado = entrada*pow(10, 24);
     return resultado;
 }
 
@@ -115,37 +117,37 @@ float kmQuadToNanoQuad() { //Km² para nanometro quadrado
 /*Funções de conversão de hectare */
 float hecToKmQuad() { //Hectare para km²
     int resultado;
-
+    resultado = entrada/100;
     return resultado;
 }
 
 float hecToMetroQuad() { //Hectare para m²
     int resultado;
-
+    resultado = entrada/10000;
     return resultado;
 }
 
 float hecToCmQuad() { //hectare para cm²
     int resultado;
-
+    resultado = entrada/100000000;
     return resultado;
 }
 
 float hecToMmQuad() { //hectare para mm²
     int resultado;
-
+    resultado = entrada/pow(10,10);
     return resultado;
 }
 
 float hecToMicroQuad() { //hectare para micrometro quadrado
     int resultado;
-
+    resultado = entrada/pow(10, 16);
     return resultado;
 }
 
 float hecToNanoQuad() { //hectare para nanometro quadrado
     int resultado;
-
+    resultado = entrada/pow(10, 22);
     return resultado;
 }
 
@@ -153,185 +155,185 @@ float hecToNanoQuad() { //hectare para nanometro quadrado
 
 float mQuadToKmQuad() { //M² para km²
     int resultado;
-
+    resultado = entrada/pow(10, 6);
     return resultado;
 }
 
 float mQuadToHec() { //M² para hectare
     int resultado;
-
+    resultado = entrada/10000;
     return resultado;
 }
 
 float mQuadToCmQuad() { //M² para cm²
     int resultado;
-
+    resultado = entrada*10000;
     return resultado;
 }
 
 float mQuadToMmQuad() { //M² para mm²
     int resultado;
-
+    resultado = entrada*pow(10, 6);
     return resultado;
 }
 
 float mQuadToMicroQuad() { //M² para micrometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 12);
     return resultado;
 }
 
 float mQuadToNanoQuad() { //M² para nanometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 18);
     return resultado;
 }
 
 /*Funções de conversão de cm² */
 float cmQuadToKmQuad() { //Cm² para km²
     int resultado;
-
+    resultado = entrada/pow(10, 10);
     return resultado;
 }
 
 float cmQuadToHec() { //Cm² para hectare
     int resultado;
-
+    resultado = entrada/pow(10, 8);
     return resultado;
 }
 
 float cmQuadToMQuad() { //Cm² para m²
     int resultado;
-
+    resultado = entrada/10000;
     return resultado;
 }
 
 float cmQuadToMmQuad() { //Cm² para mm²
     int resultado;
-
+    resultado = entrada*100;
     return resultado;
 }
 
 float cmQuadToMicroQuad() { //Cm² para micrometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 8);
     return resultado;
 }
 
 float cmQuadToNanoQuad() { //Cm² para nanometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 14);
     return resultado;
 }
 
 /*Funções de conversão de milímetro quadrado */
 float mmQuadToKmQuad() { //Mm² para km²
     int resultado;
-
+    resultado = entrada/pow(10, 12);
     return resultado;
 }
 
 float mmQuadToHec() { //Mm² para hec
     int resultado;
-
+    resultado = entrada/pow(10, 10);
     return resultado;
 }
 
 float mmQuadToMetroQuad() { //Mm² para m²
     int resultado;
-
+    resultado = entrada/pow(10, 6);
     return resultado;
 }
 
 float mmQuadToCmQuad() { //Mm² para cm²
     int resultado;
-
+    resultado = entrada/100;
     return resultado;
 }
 
 float mmQuadToMicroQua() { //Mm² para micrometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 6);
     return resultado;
 }
 
 float mmQuadToNanoQuad() { //Mm² para nanometro quadrado
     int resultado;
-
+    resultado = entrada/pow(10, 12);
     return resultado;
 }
 
 /*Funções de conversão de micrometro quadrado */
 float microQuadToKmQuad() { //Micrometro² para km²
     int resultado;
-
+    resultado = entrada/pow(10, 18);    
     return resultado;
 }
 
 float microQuadToHec() { //Micrometro² para hectare
     int resultado;
-
+    resultado = entrada/pow(10, 16);
     return resultado;
 }
 
 float microQuadToMetroQuad() { //Micrometro² para m²
     int resultado;
-
+    resultado = entrada/pow(10, 12);
     return resultado;
 }
 
 float microQuadToCmQuad() { //Micrometro² para cm²
     int resultado;
-
+    resultado = entrada/pow(10, 8);
     return resultado;
 }
 
 float microQuadToMmQuad() { //Micrometro² para mm²
     int resultado;
-
+    resultado = entrada/pow(10, 6);
     return resultado;
 }
 
 float microQuadToNanoQuad() { //Micrometro² para nanometro quadrado
     int resultado;
-
+    resultado = entrada*pow(10, 6);
     return resultado;
 }
 
 /*Funções de conversão de nanometro quadrado */
 float nanoQuadToKmQuad() { //Nanometro² para km²
     int resultado;
-
+    resultado = entrada/pow(10, 24);
     return resultado;
 }
 
 float nanoQuadToHec() { //Nanometro² para hectare
     int resultado;
-
+    resultado = entrada/pow(10, 22);
     return resultado;
 }
 
 float nanoQuadToMetroQuad() { //Nanometro² para m²
     int resultado;
-
+    resultado = entrada/pow(10, 18);
     return resultado;
 }
 
 float nanoQuadToCmQuad() { //Nanometro² para cm²
     int resultado;
-
+    resultado = entrada/pow(10, 14);
     return resultado;
 }
 
 float nanoQuadToMmQuad() { //Nanometro² para mm²
     int resultado;
-
+    resultado = entrada/pow(10, 12);
     return resultado;
 }
 
 float nanoQuadToMicroQuad() { //Nanometro² para micrometro quadrado
     int resultado;
-
+    resultado = entrada/pow(10, 6);
     return resultado;
 }
 
