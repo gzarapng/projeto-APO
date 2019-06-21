@@ -29,6 +29,29 @@ void imprimeSobre() {
 }
 
 void imprimeDescricao() {
+    int n1;
+    printf("1) Quilômetro quadrado (km²)\n");
+    printf("2) Hectare (ha)\n");
+    printf("3) Metro quadrado(m²)\n");
+    printf("4) Centímetro quadrado (cm²)\n");
+    printf("5) Milímetro quadrado (mm²)\n");
+    printf("6) Micrometro quadrado\n");
+    printf("7) Nanômetro quadrado\n");
+    printf("Opção: ");
+    scanf("%d", &n1);
+    if (n1==1){
+        printf("Quilómetro quadrado é uma unidade de medida comum da área. É igual a 100 hectares, 1000000 metros quadrados, 247.105 acres, ou 0.386102 milhas quadradas.\n");
+    }else if(n1==2){
+        printf("Um hectare, representado pelo símbolo ha(conhecido também como hectômetro/hectómetro quadrado [hm²]), é uma unidade de medida de área equivalente a 100 (cem) ares ou a 10 000 (dez mil) metros quadrados. \n");
+    }else if(n3==3){
+        printf("O metro quadrado (m²) é a unidade padrão de área adaptada para o Sistema Internacional de Unidades, e derivada da unidade básica metro. Corresponde à área que tem um quadrado com um metro de lado.\n");
+    }else if(n3==4){
+        printf("Um centímetro quadrado é a área equivalente à de um polígono de quatro lados iguais (quadrado) com cada lado medindo um centímetro.");
+    }else if(n3==5){
+        printf("Unidade de medida de superfície (mm2) equivalente à área de um quadrado que tenha um milésimo de lado.");
+    }else if(n3==6){
+        printf("O Micrometro quadrado é uma unidade de medida de superfície (μm²), definido como 1 milionésimo de metro quadrado");
+    }else if(n3==7){printf("O Nanômetro quadrado é uma unidade de medida microscópica de superfície (nm²),, definido como um bilionésimo de metro");}
 
 }
 
